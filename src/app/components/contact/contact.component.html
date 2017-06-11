@@ -1,0 +1,17 @@
+<div class="item">
+    <h2>{{contact.firstName}} {{contact.lastName}}</h2>
+    <p class="phone-number">{{contact.phoneNumber}} {{contact.adress}}</p>
+    <div class="button-wrap">
+        <input class="delete-button" type="button" name="delete" value="Удалить" (click)="onDelete()">
+        <input *ngIf="!changing" class="change-button" type="button" name="change" value="Изменить" (click)="onChange()">
+    </div>
+    <div class="change-form" *ngIf="changing">
+        <form (ngSubmit)="applyChange()">
+            <input type="text" name="" [(ngModel)]="contact.firstName" [ngModelOptions]="{standalone: true}">
+            <input type="text" name="" [(ngModel)]="contact.lastName" [ngModelOptions]="{standalone: true}">
+            <input type="text" name="" [(ngModel)]="contact.phoneNumber" [ngModelOptions]="{standalone: true}">
+            <input type="text" name="" [(ngModel)]="contact.adress" [ngModelOptions]="{standalone: true}">
+            <input type="submit" name="" value="Ok">
+        </form>
+    </div>
+</div>

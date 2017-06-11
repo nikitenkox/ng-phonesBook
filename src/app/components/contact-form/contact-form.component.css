@@ -1,0 +1,50 @@
+
+input[type="text"] {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60%;
+}
+
+input[type="button"] {
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+}
+
+ul {
+  background: pink;
+  list-style-position: outside;
+}
+
+form {
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(left, #ff6600 , #ffcc99); 
+  background: -o-linear-gradient(right, #ff6600, #ffcc99); 
+  background: -moz-linear-gradient(right, #ff6600, #ffcc99); 
+  background: linear-gradient(to right, #ff6600, #ffcc99); 
+}
+
+form input[type='reset'], form input[type='submit'] {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.formLabel {
+  position: relative;
+  margin-top: 5px;
+  width: 30%;
+  float: left;
+  line-height: 25px;
+}
+
+.bottom-buttons {
+  margin-left: 30%;
+}

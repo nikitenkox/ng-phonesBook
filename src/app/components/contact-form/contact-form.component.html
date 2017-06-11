@@ -1,0 +1,17 @@
+<form class="form" (ngSubmit)="apply(); sbmForm.reset()" #sbmForm="ngForm">
+    <p class="formLabel">Имя</p>
+    <input type="text" [(ngModel)]="firstName" name="firstName" required>
+    <br />
+    <p class="formLabel">Фамилия</p>
+    <input type="text" [(ngModel)]="lastName" name="lastName" value="">
+    <br />
+    <p class="formLabel">Номер</p>
+    <input type="text" [(ngModel)]="phoneNumber" name="phoneNumber" value="" required>
+    <br />
+    <p class="formLabel">Адрес</p>
+    <input type="text" [(ngModel)]="adress" name="adress" value="">
+    <div class="bottom-buttons">
+        <input type="reset" (click)="clear()" name="clear" value="Очистить поля">
+        <input type="submit" value="Добавить">
+    </div>
+</form>

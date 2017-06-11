@@ -1,0 +1,53 @@
+h2 {
+  line-height: 20px;
+  font-size: 2em;
+  color: white;
+}
+
+input[type="button"] {
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.change-form input[type="text"] {
+  width: 15%;
+}
+
+.item {
+  background: -webkit-linear-gradient(left, #ff6600 , #ffcc99); 
+  background: -o-linear-gradient(right, #ff6600, #ffcc99); 
+  background: -moz-linear-gradient(right, #ff6600, #ffcc99); 
+  background: linear-gradient(to right, #ff6600, #ffcc99); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px auto;
+  position: relative;
+  padding: 10px;
+  width: 70%;
+  display: block;
+}
+
+.item:hover h2 {
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.item .button-wrap {
+  display: block;
+  width: 100px;
+  position: absolute;
+  right: 10px;
+  top: 1px;
+}
+
+.item .phone-number {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.phone-number {
+  margin-top: 20px;
+  font-family: Arial;
+  line-height: 30px;
+}
